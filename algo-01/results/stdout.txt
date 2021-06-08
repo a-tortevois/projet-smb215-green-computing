@@ -1,0 +1,2950 @@
+1: /usr/bin/perf stat -d -- taskset -c 0 ./algo-01/art-optimal.o
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 ./algo-01/art-optimal.o':
+
+        109.506042      task-clock (msec)         #    0.985 CPUs utilized          
+                 2      context-switches          #    0.018 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               214      page-faults               #    0.002 M/sec                  
+         153037203      cycles                    #    1.398 GHz                      (81.78%)
+         133254533      instructions              #    0.87  insn per cycle           (81.73%)
+          15326409      branches                  #  139.959 M/sec                    (89.24%)
+            906708      branch-misses             #    5.92% of all branches          (90.87%)
+          55717124      L1-dcache-loads           #  508.804 M/sec                    (90.87%)
+             59772      L1-dcache-load-misses     #    0.11% of all L1-dcache hits    (90.87%)
+            591739      LLC-loads                 #    5.404 M/sec                    (90.87%)
+             19136      LLC-load-misses           #    3.23% of all LL-cache hits     (65.55%)
+
+       0.111117813 seconds time elapsed
+
+
+
+
+result: ['109.506042', '0.985', '2', '0.018', '0', '0.000', '214', '0.002', '153037203', '1.398', '133254533', '0.87', '15326409', '139.959', '906708', '5.92', '55717124', '508.804', '59772', '0.11', '591739', '5.404', '19136', '3.23', '0.111117813']
+
+
+2: /usr/bin/perf stat -d -- taskset -c 0 ./algo-01/art-optimal.o
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 ./algo-01/art-optimal.o':
+
+        113.863021      task-clock (msec)         #    0.908 CPUs utilized          
+                 6      context-switches          #    0.053 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               211      page-faults               #    0.002 M/sec                  
+         153812147      cycles                    #    1.351 GHz                      (81.24%)
+         131806793      instructions              #    0.86  insn per cycle           (82.46%)
+          15230281      branches                  #  133.760 M/sec                    (84.97%)
+            869177      branch-misses             #    5.71% of all branches          (91.22%)
+          55379886      L1-dcache-loads           #  486.373 M/sec                    (91.22%)
+             64485      L1-dcache-load-misses     #    0.12% of all L1-dcache hits    (91.22%)
+            594990      LLC-loads                 #    5.225 M/sec                    (91.22%)
+             19695      LLC-load-misses           #    3.31% of all LL-cache hits     (67.68%)
+
+       0.125380343 seconds time elapsed
+
+
+
+
+result: ['113.863021', '0.908', '6', '0.053', '0', '0.000', '211', '0.002', '153812147', '1.351', '131806793', '0.86', '15230281', '133.760', '869177', '5.71', '55379886', '486.373', '64485', '0.12', '594990', '5.225', '19695', '3.31', '0.125380343']
+
+
+3: /usr/bin/perf stat -d -- taskset -c 0 ./algo-01/art-optimal.o
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 ./algo-01/art-optimal.o':
+
+        113.968698      task-clock (msec)         #    0.927 CPUs utilized          
+                 5      context-switches          #    0.044 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               214      page-faults               #    0.002 M/sec                  
+         154136003      cycles                    #    1.352 GHz                      (87.90%)
+         132604501      instructions              #    0.86  insn per cycle           (82.54%)
+          15054700      branches                  #  132.095 M/sec                    (82.48%)
+            877454      branch-misses             #    5.83% of all branches          (87.08%)
+          55362552      L1-dcache-loads           #  485.770 M/sec                    (91.23%)
+             68105      L1-dcache-load-misses     #    0.12% of all L1-dcache hits    (91.23%)
+            610535      LLC-loads                 #    5.357 M/sec                    (91.22%)
+             34166      LLC-load-misses           #    5.60% of all LL-cache hits     (74.22%)
+
+       0.123002294 seconds time elapsed
+
+
+
+
+result: ['113.968698', '0.927', '5', '0.044', '0', '0.000', '214', '0.002', '154136003', '1.352', '132604501', '0.86', '15054700', '132.095', '877454', '5.83', '55362552', '485.770', '68105', '0.12', '610535', '5.357', '34166', '5.60', '0.123002294']
+
+
+4: /usr/bin/perf stat -d -- taskset -c 0 ./algo-01/art-optimal.o
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 ./algo-01/art-optimal.o':
+
+        113.864479      task-clock (msec)         #    0.929 CPUs utilized          
+                 6      context-switches          #    0.053 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               214      page-faults               #    0.002 M/sec                  
+         154202692      cycles                    #    1.354 GHz                      (87.45%)
+         132487839      instructions              #    0.86  insn per cycle           (82.53%)
+          15059163      branches                  #  132.255 M/sec                    (82.46%)
+            874627      branch-misses             #    5.81% of all branches          (87.41%)
+          55362511      L1-dcache-loads           #  486.214 M/sec                    (91.22%)
+             64261      L1-dcache-load-misses     #    0.12% of all L1-dcache hits    (91.22%)
+            600311      LLC-loads                 #    5.272 M/sec                    (91.22%)
+             32053      LLC-load-misses           #    5.34% of all LL-cache hits     (73.93%)
+
+       0.122599898 seconds time elapsed
+
+
+
+
+result: ['113.864479', '0.929', '6', '0.053', '0', '0.000', '214', '0.002', '154202692', '1.354', '132487839', '0.86', '15059163', '132.255', '874627', '5.81', '55362511', '486.214', '64261', '0.12', '600311', '5.272', '32053', '5.34', '0.122599898']
+
+
+5: /usr/bin/perf stat -d -- taskset -c 0 ./algo-01/art-optimal.o
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 ./algo-01/art-optimal.o':
+
+        109.816771      task-clock (msec)         #    0.928 CPUs utilized          
+                 4      context-switches          #    0.036 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               211      page-faults               #    0.002 M/sec                  
+         153440502      cycles                    #    1.397 GHz                      (81.82%)
+         133814393      instructions              #    0.87  insn per cycle           (82.40%)
+          15235963      branches                  #  138.740 M/sec                    (90.90%)
+            914927      branch-misses             #    6.01% of all branches          (90.89%)
+          55688571      L1-dcache-loads           #  507.104 M/sec                    (90.89%)
+             60317      L1-dcache-load-misses     #    0.11% of all L1-dcache hits    (90.90%)
+            587192      LLC-loads                 #    5.347 M/sec                    (90.90%)
+             19994      LLC-load-misses           #    3.41% of all LL-cache hits     (63.12%)
+
+       0.118282591 seconds time elapsed
+
+
+
+
+result: ['109.816771', '0.928', '4', '0.036', '0', '0.000', '211', '0.002', '153440502', '1.397', '133814393', '0.87', '15235963', '138.740', '914927', '6.01', '55688571', '507.104', '60317', '0.11', '587192', '5.347', '19994', '3.41', '0.118282591']
+
+
+6: /usr/bin/perf stat -d -- taskset -c 0 ./algo-01/art-optimal.o
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 ./algo-01/art-optimal.o':
+
+        109.644114      task-clock (msec)         #    0.954 CPUs utilized          
+                 4      context-switches          #    0.036 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               213      page-faults               #    0.002 M/sec                  
+         153203737      cycles                    #    1.397 GHz                      (81.85%)
+         132859268      instructions              #    0.87  insn per cycle           (81.78%)
+          15347659      branches                  #  139.977 M/sec                    (85.81%)
+            885055      branch-misses             #    5.77% of all branches          (90.88%)
+          55653206      L1-dcache-loads           #  507.580 M/sec                    (90.88%)
+             65866      L1-dcache-load-misses     #    0.12% of all L1-dcache hits    (90.88%)
+            603194      LLC-loads                 #    5.501 M/sec                    (90.88%)
+             19415      LLC-load-misses           #    3.22% of all LL-cache hits     (68.88%)
+
+       0.114964688 seconds time elapsed
+
+
+
+
+result: ['109.644114', '0.954', '4', '0.036', '0', '0.000', '213', '0.002', '153203737', '1.397', '132859268', '0.87', '15347659', '139.977', '885055', '5.77', '55653206', '507.580', '65866', '0.12', '603194', '5.501', '19415', '3.22', '0.114964688']
+
+
+7: /usr/bin/perf stat -d -- taskset -c 0 ./algo-01/art-optimal.o
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 ./algo-01/art-optimal.o':
+
+        109.690470      task-clock (msec)         #    0.941 CPUs utilized          
+                 4      context-switches          #    0.036 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               214      page-faults               #    0.002 M/sec                  
+         153250377      cycles                    #    1.397 GHz                      (81.79%)
+         134005528      instructions              #    0.87  insn per cycle           (83.22%)
+          15227797      branches                  #  138.825 M/sec                    (90.89%)
+            875250      branch-misses             #    5.75% of all branches          (90.88%)
+          55714259      L1-dcache-loads           #  507.923 M/sec                    (90.89%)
+             65296      L1-dcache-load-misses     #    0.12% of all L1-dcache hits    (90.88%)
+            604100      LLC-loads                 #    5.507 M/sec                    (90.88%)
+             20092      LLC-load-misses           #    3.33% of all LL-cache hits     (62.36%)
+
+       0.116609347 seconds time elapsed
+
+
+
+
+result: ['109.690470', '0.941', '4', '0.036', '0', '0.000', '214', '0.002', '153250377', '1.397', '134005528', '0.87', '15227797', '138.825', '875250', '5.75', '55714259', '507.923', '65296', '0.12', '604100', '5.507', '20092', '3.33', '0.116609347']
+
+
+8: /usr/bin/perf stat -d -- taskset -c 0 ./algo-01/art-optimal.o
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 ./algo-01/art-optimal.o':
+
+        109.622864      task-clock (msec)         #    0.952 CPUs utilized          
+                 4      context-switches          #    0.036 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               212      page-faults               #    0.002 M/sec                  
+         153165586      cycles                    #    1.397 GHz                      (81.84%)
+         132761660      instructions              #    0.87  insn per cycle           (81.78%)
+          15346797      branches                  #  139.996 M/sec                    (85.63%)
+            885467      branch-misses             #    5.77% of all branches          (90.88%)
+          55641947      L1-dcache-loads           #  507.576 M/sec                    (90.88%)
+             70324      L1-dcache-load-misses     #    0.13% of all L1-dcache hits    (90.88%)
+            610385      LLC-loads                 #    5.568 M/sec                    (90.88%)
+             18876      LLC-load-misses           #    3.09% of all LL-cache hits     (69.08%)
+
+       0.115150381 seconds time elapsed
+
+
+
+
+result: ['109.622864', '0.952', '4', '0.036', '0', '0.000', '212', '0.002', '153165586', '1.397', '132761660', '0.87', '15346797', '139.996', '885467', '5.77', '55641947', '507.576', '70324', '0.13', '610385', '5.568', '18876', '3.09', '0.115150381']
+
+
+9: /usr/bin/perf stat -d -- taskset -c 0 ./algo-01/art-optimal.o
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 ./algo-01/art-optimal.o':
+
+        109.649115      task-clock (msec)         #    0.947 CPUs utilized          
+                 4      context-switches          #    0.036 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               213      page-faults               #    0.002 M/sec                  
+         153201020      cycles                    #    1.397 GHz                      (81.79%)
+         134052438      instructions              #    0.88  insn per cycle           (84.97%)
+          15210797      branches                  #  138.722 M/sec                    (90.88%)
+            884639      branch-misses             #    5.82% of all branches          (90.88%)
+          55731589      L1-dcache-loads           #  508.272 M/sec                    (90.88%)
+             64658      L1-dcache-load-misses     #    0.12% of all L1-dcache hits    (90.88%)
+            592859      LLC-loads                 #    5.407 M/sec                    (90.88%)
+             20474      LLC-load-misses           #    3.45% of all LL-cache hits     (60.62%)
+
+       0.115845409 seconds time elapsed
+
+
+
+
+result: ['109.649115', '0.947', '4', '0.036', '0', '0.000', '213', '0.002', '153201020', '1.397', '134052438', '0.88', '15210797', '138.722', '884639', '5.82', '55731589', '508.272', '64658', '0.12', '592859', '5.407', '20474', '3.45', '0.115845409']
+
+
+10: /usr/bin/perf stat -d -- taskset -c 0 ./algo-01/art-optimal.o
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 ./algo-01/art-optimal.o':
+
+        109.934688      task-clock (msec)         #    0.933 CPUs utilized          
+                 4      context-switches          #    0.036 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               211      page-faults               #    0.002 M/sec                  
+         153599993      cycles                    #    1.397 GHz                      (81.83%)
+         133966902      instructions              #    0.87  insn per cycle           (83.17%)
+          15229409      branches                  #  138.531 M/sec                    (90.91%)
+            891536      branch-misses             #    5.85% of all branches          (90.90%)
+          55738596      L1-dcache-loads           #  507.016 M/sec                    (90.91%)
+             65917      L1-dcache-load-misses     #    0.12% of all L1-dcache hits    (90.90%)
+            601071      LLC-loads                 #    5.468 M/sec                    (90.91%)
+             20657      LLC-load-misses           #    3.44% of all LL-cache hits     (62.31%)
+
+       0.117820479 seconds time elapsed
+
+
+
+
+result: ['109.934688', '0.933', '4', '0.036', '0', '0.000', '211', '0.002', '153599993', '1.397', '133966902', '0.87', '15229409', '138.531', '891536', '5.85', '55738596', '507.016', '65917', '0.12', '601071', '5.468', '20657', '3.44', '0.117820479']
+
+
+1: /usr/bin/time -v taskset -c 0 ./algo-01/art-optimal.o
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 ./algo-01/art-optimal.o"
+	User time (seconds): 0.13
+	System time (seconds): 0.01
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.16
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1468
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 245
+	Voluntary context switches: 1
+	Involuntary context switches: 6
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.13', '0.01', '98', '0:00.16', '0', '0', '0', '0', '1468', '0', '0', '245', '1', '6', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+2: /usr/bin/time -v taskset -c 0 ./algo-01/art-optimal.o
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 ./algo-01/art-optimal.o"
+	User time (seconds): 0.13
+	System time (seconds): 0.02
+	Percent of CPU this job got: 95%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.16
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1468
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 244
+	Voluntary context switches: 2
+	Involuntary context switches: 3
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.13', '0.02', '95', '0:00.16', '0', '0', '0', '0', '1468', '0', '0', '244', '2', '3', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+3: /usr/bin/time -v taskset -c 0 ./algo-01/art-optimal.o
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 ./algo-01/art-optimal.o"
+	User time (seconds): 0.10
+	System time (seconds): 0.05
+	Percent of CPU this job got: 95%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.16
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1340
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 241
+	Voluntary context switches: 2
+	Involuntary context switches: 10
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.10', '0.05', '95', '0:00.16', '0', '0', '0', '0', '1340', '0', '0', '241', '2', '10', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+4: /usr/bin/time -v taskset -c 0 ./algo-01/art-optimal.o
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 ./algo-01/art-optimal.o"
+	User time (seconds): 0.10
+	System time (seconds): 0.02
+	Percent of CPU this job got: 96%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.14
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1380
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 243
+	Voluntary context switches: 2
+	Involuntary context switches: 3
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.10', '0.02', '96', '0:00.14', '0', '0', '0', '0', '1380', '0', '0', '243', '2', '3', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+5: /usr/bin/time -v taskset -c 0 ./algo-01/art-optimal.o
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 ./algo-01/art-optimal.o"
+	User time (seconds): 0.14
+	System time (seconds): 0.01
+	Percent of CPU this job got: 95%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.16
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1412
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 243
+	Voluntary context switches: 2
+	Involuntary context switches: 7
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.14', '0.01', '95', '0:00.16', '0', '0', '0', '0', '1412', '0', '0', '243', '2', '7', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+6: /usr/bin/time -v taskset -c 0 ./algo-01/art-optimal.o
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 ./algo-01/art-optimal.o"
+	User time (seconds): 0.13
+	System time (seconds): 0.01
+	Percent of CPU this job got: 97%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.16
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1468
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 243
+	Voluntary context switches: 2
+	Involuntary context switches: 7
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.13', '0.01', '97', '0:00.16', '0', '0', '0', '0', '1468', '0', '0', '243', '2', '7', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+7: /usr/bin/time -v taskset -c 0 ./algo-01/art-optimal.o
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 ./algo-01/art-optimal.o"
+	User time (seconds): 0.11
+	System time (seconds): 0.01
+	Percent of CPU this job got: 97%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.13
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1412
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 247
+	Voluntary context switches: 2
+	Involuntary context switches: 3
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.11', '0.01', '97', '0:00.13', '0', '0', '0', '0', '1412', '0', '0', '247', '2', '3', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+8: /usr/bin/time -v taskset -c 0 ./algo-01/art-optimal.o
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 ./algo-01/art-optimal.o"
+	User time (seconds): 0.10
+	System time (seconds): 0.02
+	Percent of CPU this job got: 97%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.13
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1468
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 244
+	Voluntary context switches: 2
+	Involuntary context switches: 3
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.10', '0.02', '97', '0:00.13', '0', '0', '0', '0', '1468', '0', '0', '244', '2', '3', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+9: /usr/bin/time -v taskset -c 0 ./algo-01/art-optimal.o
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 ./algo-01/art-optimal.o"
+	User time (seconds): 0.11
+	System time (seconds): 0.04
+	Percent of CPU this job got: 95%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.16
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1468
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 245
+	Voluntary context switches: 2
+	Involuntary context switches: 10
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.11', '0.04', '95', '0:00.16', '0', '0', '0', '0', '1468', '0', '0', '245', '2', '10', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+10: /usr/bin/time -v taskset -c 0 ./algo-01/art-optimal.o
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 ./algo-01/art-optimal.o"
+	User time (seconds): 0.13
+	System time (seconds): 0.02
+	Percent of CPU this job got: 97%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.16
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1392
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 243
+	Voluntary context switches: 2
+	Involuntary context switches: 7
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.13', '0.02', '97', '0:00.16', '0', '0', '0', '0', '1392', '0', '0', '243', '2', '7', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+1: /usr/bin/perf stat -d -- taskset -c 0 java -cp algo-01 ArtOptimal
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 java -cp algo-01 ArtOptimal':
+
+       1761.838342      task-clock (msec)         #    0.708 CPUs utilized          
+               558      context-switches          #    0.317 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              6074      page-faults               #    0.003 M/sec                  
+        2364316263      cycles                    #    1.342 GHz                      (88.40%)
+        1176693554      instructions              #    0.50  insn per cycle           (88.55%)
+         133919481      branches                  #   76.011 M/sec                    (88.56%)
+          37854844      branch-misses             #   28.27% of all branches          (86.85%)
+         586521958      L1-dcache-loads           #  332.903 M/sec                    (87.48%)
+          11821602      L1-dcache-load-misses     #    2.02% of all L1-dcache hits    (87.28%)
+          46882957      LLC-loads                 #   26.610 M/sec                    (86.24%)
+           3909936      LLC-load-misses           #    8.34% of all LL-cache hits     (75.04%)
+
+       2.489799892 seconds time elapsed
+
+
+
+
+result: ['1761.838342', '0.708', '558', '0.317', '0', '0.000', '6074', '0.003', '2364316263', '1.342', '1176693554', '0.50', '133919481', '76.011', '37854844', '28.27', '586521958', '332.903', '11821602', '2.02', '46882957', '26.610', '3909936', '8.34', '2.489799892']
+
+
+2: /usr/bin/perf stat -d -- taskset -c 0 java -cp algo-01 ArtOptimal
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 java -cp algo-01 ArtOptimal':
+
+       1612.609689      task-clock (msec)         #    0.988 CPUs utilized          
+               270      context-switches          #    0.167 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              6002      page-faults               #    0.004 M/sec                  
+        2249213439      cycles                    #    1.395 GHz                      (86.96%)
+        1137742455      instructions              #    0.51  insn per cycle           (86.77%)
+         129446520      branches                  #   80.271 M/sec                    (87.60%)
+          35423901      branch-misses             #   27.37% of all branches          (88.22%)
+         558342815      L1-dcache-loads           #  346.236 M/sec                    (87.89%)
+          11458889      L1-dcache-load-misses     #    2.05% of all L1-dcache hits    (87.30%)
+          44715729      LLC-loads                 #   27.729 M/sec                    (87.55%)
+           3512758      LLC-load-misses           #    7.86% of all LL-cache hits     (74.67%)
+
+       1.631826380 seconds time elapsed
+
+
+
+
+result: ['1612.609689', '0.988', '270', '0.167', '0', '0.000', '6002', '0.004', '2249213439', '1.395', '1137742455', '0.51', '129446520', '80.271', '35423901', '27.37', '558342815', '346.236', '11458889', '2.05', '44715729', '27.729', '3512758', '7.86', '1.631826380']
+
+
+3: /usr/bin/perf stat -d -- taskset -c 0 java -cp algo-01 ArtOptimal
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 java -cp algo-01 ArtOptimal':
+
+       1623.391361      task-clock (msec)         #    0.987 CPUs utilized          
+               273      context-switches          #    0.168 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              5986      page-faults               #    0.004 M/sec                  
+        2264405126      cycles                    #    1.395 GHz                      (87.24%)
+        1143716225      instructions              #    0.51  insn per cycle           (87.37%)
+         129084593      branches                  #   79.515 M/sec                    (87.08%)
+          36342470      branch-misses             #   28.15% of all branches          (87.68%)
+         563118040      L1-dcache-loads           #  346.878 M/sec                    (88.04%)
+          11622328      L1-dcache-load-misses     #    2.06% of all L1-dcache hits    (87.32%)
+          45000727      LLC-loads                 #   27.720 M/sec                    (87.68%)
+           3497685      LLC-load-misses           #    7.77% of all LL-cache hits     (74.83%)
+
+       1.644533683 seconds time elapsed
+
+
+
+
+result: ['1623.391361', '0.987', '273', '0.168', '0', '0.000', '5986', '0.004', '2264405126', '1.395', '1143716225', '0.51', '129084593', '79.515', '36342470', '28.15', '563118040', '346.878', '11622328', '2.06', '45000727', '27.720', '3497685', '7.77', '1.644533683']
+
+
+4: /usr/bin/perf stat -d -- taskset -c 0 java -cp algo-01 ArtOptimal
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 java -cp algo-01 ArtOptimal':
+
+       1670.482086      task-clock (msec)         #    0.993 CPUs utilized          
+               284      context-switches          #    0.170 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              5963      page-faults               #    0.004 M/sec                  
+        2325194755      cycles                    #    1.392 GHz                      (86.86%)
+        1165033338      instructions              #    0.50  insn per cycle           (86.72%)
+         133693515      branches                  #   80.033 M/sec                    (86.83%)
+          37729842      branch-misses             #   28.22% of all branches          (87.52%)
+         574857437      L1-dcache-loads           #  344.127 M/sec                    (88.08%)
+          11272222      L1-dcache-load-misses     #    1.96% of all L1-dcache hits    (88.13%)
+          46089969      LLC-loads                 #   27.591 M/sec                    (88.16%)
+           3234250      LLC-load-misses           #    7.02% of all LL-cache hits     (74.56%)
+
+       1.682540026 seconds time elapsed
+
+
+
+
+result: ['1670.482086', '0.993', '284', '0.170', '0', '0.000', '5963', '0.004', '2325194755', '1.392', '1165033338', '0.50', '133693515', '80.033', '37729842', '28.22', '574857437', '344.127', '11272222', '1.96', '46089969', '27.591', '3234250', '7.02', '1.682540026']
+
+
+5: /usr/bin/perf stat -d -- taskset -c 0 java -cp algo-01 ArtOptimal
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 java -cp algo-01 ArtOptimal':
+
+       1683.790209      task-clock (msec)         #    0.984 CPUs utilized          
+               267      context-switches          #    0.159 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              5994      page-faults               #    0.004 M/sec                  
+        2348665785      cycles                    #    1.395 GHz                      (86.56%)
+        1186807572      instructions              #    0.51  insn per cycle           (87.29%)
+         134026842      branches                  #   79.598 M/sec                    (87.53%)
+          37782117      branch-misses             #   28.19% of all branches          (88.10%)
+         581003671      L1-dcache-loads           #  345.057 M/sec                    (88.46%)
+          11966195      L1-dcache-load-misses     #    2.06% of all L1-dcache hits    (87.53%)
+          45981401      LLC-loads                 #   27.308 M/sec                    (87.48%)
+           3449306      LLC-load-misses           #    7.50% of all LL-cache hits     (73.62%)
+
+       1.711002759 seconds time elapsed
+
+
+
+
+result: ['1683.790209', '0.984', '267', '0.159', '0', '0.000', '5994', '0.004', '2348665785', '1.395', '1186807572', '0.51', '134026842', '79.598', '37782117', '28.19', '581003671', '345.057', '11966195', '2.06', '45981401', '27.308', '3449306', '7.50', '1.711002759']
+
+
+6: /usr/bin/perf stat -d -- taskset -c 0 java -cp algo-01 ArtOptimal
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 java -cp algo-01 ArtOptimal':
+
+       1609.837402      task-clock (msec)         #    0.987 CPUs utilized          
+               269      context-switches          #    0.167 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              6003      page-faults               #    0.004 M/sec                  
+        2245446856      cycles                    #    1.395 GHz                      (87.55%)
+        1138159495      instructions              #    0.51  insn per cycle           (87.17%)
+         129256191      branches                  #   80.291 M/sec                    (87.58%)
+          35654877      branch-misses             #   27.58% of all branches          (88.20%)
+         557136148      L1-dcache-loads           #  346.082 M/sec                    (87.85%)
+          11278023      L1-dcache-load-misses     #    2.02% of all L1-dcache hits    (87.23%)
+          45307282      LLC-loads                 #   28.144 M/sec                    (86.91%)
+           3276517      LLC-load-misses           #    7.23% of all LL-cache hits     (75.07%)
+
+       1.630222301 seconds time elapsed
+
+
+
+
+result: ['1609.837402', '0.987', '269', '0.167', '0', '0.000', '6003', '0.004', '2245446856', '1.395', '1138159495', '0.51', '129256191', '80.291', '35654877', '27.58', '557136148', '346.082', '11278023', '2.02', '45307282', '28.144', '3276517', '7.23', '1.630222301']
+
+
+7: /usr/bin/perf stat -d -- taskset -c 0 java -cp algo-01 ArtOptimal
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 java -cp algo-01 ArtOptimal':
+
+       1619.522087      task-clock (msec)         #    0.987 CPUs utilized          
+               260      context-switches          #    0.161 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              6003      page-faults               #    0.004 M/sec                  
+        2259054692      cycles                    #    1.395 GHz                      (87.24%)
+        1146896381      instructions              #    0.51  insn per cycle           (87.23%)
+         128985036      branches                  #   79.644 M/sec                    (87.64%)
+          34961336      branch-misses             #   27.10% of all branches          (87.66%)
+         560538226      L1-dcache-loads           #  346.113 M/sec                    (87.66%)
+          11898992      L1-dcache-load-misses     #    2.12% of all L1-dcache hits    (87.69%)
+          45094804      LLC-loads                 #   27.845 M/sec                    (87.60%)
+           3521807      LLC-load-misses           #    7.81% of all LL-cache hits     (74.52%)
+
+       1.641597053 seconds time elapsed
+
+
+
+
+result: ['1619.522087', '0.987', '260', '0.161', '0', '0.000', '6003', '0.004', '2259054692', '1.395', '1146896381', '0.51', '128985036', '79.644', '34961336', '27.10', '560538226', '346.113', '11898992', '2.12', '45094804', '27.845', '3521807', '7.81', '1.641597053']
+
+
+8: /usr/bin/perf stat -d -- taskset -c 0 java -cp algo-01 ArtOptimal
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 java -cp algo-01 ArtOptimal':
+
+       1643.077090      task-clock (msec)         #    0.987 CPUs utilized          
+               285      context-switches          #    0.173 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              5984      page-faults               #    0.004 M/sec                  
+        2286818909      cycles                    #    1.392 GHz                      (87.59%)
+        1154130467      instructions              #    0.50  insn per cycle           (87.46%)
+         131290558      branches                  #   79.905 M/sec                    (87.74%)
+          36318892      branch-misses             #   27.66% of all branches          (87.83%)
+         563288213      L1-dcache-loads           #  342.825 M/sec                    (87.83%)
+          11341562      L1-dcache-load-misses     #    2.01% of all L1-dcache hits    (87.06%)
+          45547544      LLC-loads                 #   27.721 M/sec                    (87.06%)
+           3474118      LLC-load-misses           #    7.63% of all LL-cache hits     (75.03%)
+
+       1.664826695 seconds time elapsed
+
+
+
+
+result: ['1643.077090', '0.987', '285', '0.173', '0', '0.000', '5984', '0.004', '2286818909', '1.392', '1154130467', '0.50', '131290558', '79.905', '36318892', '27.66', '563288213', '342.825', '11341562', '2.01', '45547544', '27.721', '3474118', '7.63', '1.664826695']
+
+
+9: /usr/bin/perf stat -d -- taskset -c 0 java -cp algo-01 ArtOptimal
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 java -cp algo-01 ArtOptimal':
+
+       1685.947866      task-clock (msec)         #    0.987 CPUs utilized          
+               295      context-switches          #    0.175 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              6019      page-faults               #    0.004 M/sec                  
+        2346640078      cycles                    #    1.392 GHz                      (86.76%)
+        1190617563      instructions              #    0.51  insn per cycle           (87.36%)
+         134911788      branches                  #   80.021 M/sec                    (87.84%)
+          36867428      branch-misses             #   27.33% of all branches          (88.13%)
+         582378979      L1-dcache-loads           #  345.431 M/sec                    (88.14%)
+          12111366      L1-dcache-load-misses     #    2.08% of all L1-dcache hits    (87.67%)
+          47419574      LLC-loads                 #   28.126 M/sec                    (87.48%)
+           3590263      LLC-load-misses           #    7.57% of all LL-cache hits     (73.38%)
+
+       1.708388069 seconds time elapsed
+
+
+
+
+result: ['1685.947866', '0.987', '295', '0.175', '0', '0.000', '6019', '0.004', '2346640078', '1.392', '1190617563', '0.51', '134911788', '80.021', '36867428', '27.33', '582378979', '345.431', '12111366', '2.08', '47419574', '28.126', '3590263', '7.57', '1.708388069']
+
+
+10: /usr/bin/perf stat -d -- taskset -c 0 java -cp algo-01 ArtOptimal
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 java -cp algo-01 ArtOptimal':
+
+       1691.559955      task-clock (msec)         #    0.986 CPUs utilized          
+               295      context-switches          #    0.174 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              6094      page-faults               #    0.004 M/sec                  
+        2352018578      cycles                    #    1.390 GHz                      (87.00%)
+        1197137047      instructions              #    0.51  insn per cycle           (86.54%)
+         136305270      branches                  #   80.580 M/sec                    (87.57%)
+          35726573      branch-misses             #   26.21% of all branches          (87.60%)
+         581698828      L1-dcache-loads           #  343.883 M/sec                    (87.58%)
+          11806009      L1-dcache-load-misses     #    2.03% of all L1-dcache hits    (88.17%)
+          47114656      LLC-loads                 #   27.853 M/sec                    (88.23%)
+           3578692      LLC-load-misses           #    7.60% of all LL-cache hits     (74.30%)
+
+       1.714867558 seconds time elapsed
+
+
+
+
+result: ['1691.559955', '0.986', '295', '0.174', '0', '0.000', '6094', '0.004', '2352018578', '1.390', '1197137047', '0.51', '136305270', '80.580', '35726573', '26.21', '581698828', '343.883', '11806009', '2.03', '47114656', '27.853', '3578692', '7.60', '1.714867558']
+
+
+1: /usr/bin/time -v taskset -c 0 java -cp algo-01 ArtOptimal
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 java -cp algo-01 ArtOptimal"
+	User time (seconds): 1.58
+	System time (seconds): 0.09
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.70
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 35228
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 8
+	Minor (reclaiming a frame) page faults: 5987
+	Voluntary context switches: 117
+	Involuntary context switches: 159
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2488
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['1.58', '0.09', '98', '0:01.70', '0', '0', '0', '0', '35228', '0', '8', '5987', '117', '159', '0', '0', '2488', '0', '0', '0', '4096', '0']
+
+
+2: /usr/bin/time -v taskset -c 0 java -cp algo-01 ArtOptimal
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 java -cp algo-01 ArtOptimal"
+	User time (seconds): 1.54
+	System time (seconds): 0.09
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.67
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 35372
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 8
+	Minor (reclaiming a frame) page faults: 6012
+	Voluntary context switches: 114
+	Involuntary context switches: 162
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2488
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['1.54', '0.09', '98', '0:01.67', '0', '0', '0', '0', '35372', '0', '8', '6012', '114', '162', '0', '0', '2488', '0', '0', '0', '4096', '0']
+
+
+3: /usr/bin/time -v taskset -c 0 java -cp algo-01 ArtOptimal
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 java -cp algo-01 ArtOptimal"
+	User time (seconds): 1.60
+	System time (seconds): 0.09
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.70
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 35460
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 8
+	Minor (reclaiming a frame) page faults: 5992
+	Voluntary context switches: 118
+	Involuntary context switches: 160
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2488
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['1.60', '0.09', '99', '0:01.70', '0', '0', '0', '0', '35460', '0', '8', '5992', '118', '160', '0', '0', '2488', '0', '0', '0', '4096', '0']
+
+
+4: /usr/bin/time -v taskset -c 0 java -cp algo-01 ArtOptimal
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 java -cp algo-01 ArtOptimal"
+	User time (seconds): 1.62
+	System time (seconds): 0.11
+	Percent of CPU this job got: 97%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.77
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 35648
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 8
+	Minor (reclaiming a frame) page faults: 6155
+	Voluntary context switches: 128
+	Involuntary context switches: 167
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2488
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['1.62', '0.11', '97', '0:01.77', '0', '0', '0', '0', '35648', '0', '8', '6155', '128', '167', '0', '0', '2488', '0', '0', '0', '4096', '0']
+
+
+5: /usr/bin/time -v taskset -c 0 java -cp algo-01 ArtOptimal
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 java -cp algo-01 ArtOptimal"
+	User time (seconds): 1.59
+	System time (seconds): 0.08
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.70
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 34956
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 8
+	Minor (reclaiming a frame) page faults: 6016
+	Voluntary context switches: 117
+	Involuntary context switches: 159
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2488
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['1.59', '0.08', '98', '0:01.70', '0', '0', '0', '0', '34956', '0', '8', '6016', '117', '159', '0', '0', '2488', '0', '0', '0', '4096', '0']
+
+
+6: /usr/bin/time -v taskset -c 0 java -cp algo-01 ArtOptimal
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 java -cp algo-01 ArtOptimal"
+	User time (seconds): 1.58
+	System time (seconds): 0.07
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.69
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 35244
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 8
+	Minor (reclaiming a frame) page faults: 6015
+	Voluntary context switches: 122
+	Involuntary context switches: 171
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2488
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['1.58', '0.07', '98', '0:01.69', '0', '0', '0', '0', '35244', '0', '8', '6015', '122', '171', '0', '0', '2488', '0', '0', '0', '4096', '0']
+
+
+7: /usr/bin/time -v taskset -c 0 java -cp algo-01 ArtOptimal
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 java -cp algo-01 ArtOptimal"
+	User time (seconds): 1.51
+	System time (seconds): 0.13
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.67
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 35388
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 8
+	Minor (reclaiming a frame) page faults: 6024
+	Voluntary context switches: 118
+	Involuntary context switches: 165
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2488
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['1.51', '0.13', '98', '0:01.67', '0', '0', '0', '0', '35388', '0', '8', '6024', '118', '165', '0', '0', '2488', '0', '0', '0', '4096', '0']
+
+
+8: /usr/bin/time -v taskset -c 0 java -cp algo-01 ArtOptimal
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 java -cp algo-01 ArtOptimal"
+	User time (seconds): 1.60
+	System time (seconds): 0.10
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.71
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 35324
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 8
+	Minor (reclaiming a frame) page faults: 5992
+	Voluntary context switches: 114
+	Involuntary context switches: 152
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2488
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['1.60', '0.10', '99', '0:01.71', '0', '0', '0', '0', '35324', '0', '8', '5992', '114', '152', '0', '0', '2488', '0', '0', '0', '4096', '0']
+
+
+9: /usr/bin/time -v taskset -c 0 java -cp algo-01 ArtOptimal
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 java -cp algo-01 ArtOptimal"
+	User time (seconds): 1.64
+	System time (seconds): 0.07
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.74
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 35440
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 8
+	Minor (reclaiming a frame) page faults: 6049
+	Voluntary context switches: 119
+	Involuntary context switches: 167
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2488
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['1.64', '0.07', '98', '0:01.74', '0', '0', '0', '0', '35440', '0', '8', '6049', '119', '167', '0', '0', '2488', '0', '0', '0', '4096', '0']
+
+
+10: /usr/bin/time -v taskset -c 0 java -cp algo-01 ArtOptimal
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 java -cp algo-01 ArtOptimal"
+	User time (seconds): 1.57
+	System time (seconds): 0.09
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.68
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 35060
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 8
+	Minor (reclaiming a frame) page faults: 6005
+	Voluntary context switches: 121
+	Involuntary context switches: 152
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2488
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['1.57', '0.09', '98', '0:01.68', '0', '0', '0', '0', '35060', '0', '8', '6005', '121', '152', '0', '0', '2488', '0', '0', '0', '4096', '0']
+
+
+1: /usr/bin/perf stat -d -- taskset -c 0 node algo-01/art-optimal.js
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 node algo-01/art-optimal.js':
+
+        755.428965      task-clock (msec)         #    0.368 CPUs utilized          
+               537      context-switches          #    0.711 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              5125      page-faults               #    0.007 M/sec                  
+         948849382      cycles                    #    1.256 GHz                      (89.52%)
+         602111600      instructions              #    0.63  insn per cycle           (86.85%)
+          69579803      branches                  #   92.106 M/sec                    (86.81%)
+           6309466      branch-misses             #    9.07% of all branches          (88.11%)
+         259592380      L1-dcache-loads           #  343.636 M/sec                    (89.10%)
+           1902343      L1-dcache-load-misses     #    0.73% of all L1-dcache hits    (84.83%)
+          14610447      LLC-loads                 #   19.341 M/sec                    (84.86%)
+           1768887      LLC-load-misses           #   12.11% of all LL-cache hits     (79.44%)
+
+       2.053575266 seconds time elapsed
+
+
+
+
+result: ['755.428965', '0.368', '537', '0.711', '0', '0.000', '5125', '0.007', '948849382', '1.256', '602111600', '0.63', '69579803', '92.106', '6309466', '9.07', '259592380', '343.636', '1902343', '0.73', '14610447', '19.341', '1768887', '12.11', '2.053575266']
+
+
+2: /usr/bin/perf stat -d -- taskset -c 0 node algo-01/art-optimal.js
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 node algo-01/art-optimal.js':
+
+        659.595523      task-clock (msec)         #    0.995 CPUs utilized          
+               231      context-switches          #    0.350 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              4916      page-faults               #    0.007 M/sec                  
+         897367906      cycles                    #    1.360 GHz                      (87.87%)
+         577490921      instructions              #    0.64  insn per cycle           (87.48%)
+          65108388      branches                  #   98.710 M/sec                    (87.11%)
+           6337947      branch-misses             #    9.73% of all branches          (87.87%)
+         245248409      L1-dcache-loads           #  371.816 M/sec                    (87.83%)
+           1760980      L1-dcache-load-misses     #    0.72% of all L1-dcache hits    (87.92%)
+          13602106      LLC-loads                 #   20.622 M/sec                    (87.45%)
+           1796451      LLC-load-misses           #   13.21% of all LL-cache hits     (74.35%)
+
+       0.662878216 seconds time elapsed
+
+
+
+
+result: ['659.595523', '0.995', '231', '0.350', '0', '0.000', '4916', '0.007', '897367906', '1.360', '577490921', '0.64', '65108388', '98.710', '6337947', '9.73', '245248409', '371.816', '1760980', '0.72', '13602106', '20.622', '1796451', '13.21', '0.662878216']
+
+
+3: /usr/bin/perf stat -d -- taskset -c 0 node algo-01/art-optimal.js
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 node algo-01/art-optimal.js':
+
+        645.706407      task-clock (msec)         #    0.992 CPUs utilized          
+               229      context-switches          #    0.355 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              4906      page-faults               #    0.008 M/sec                  
+         895465660      cycles                    #    1.387 GHz                      (87.65%)
+         573550653      instructions              #    0.64  insn per cycle           (86.43%)
+          64821577      branches                  #  100.389 M/sec                    (87.60%)
+           6351128      branch-misses             #    9.80% of all branches          (87.74%)
+         244648239      L1-dcache-loads           #  378.885 M/sec                    (87.54%)
+           1813539      L1-dcache-load-misses     #    0.74% of all L1-dcache hits    (87.40%)
+          13896787      LLC-loads                 #   21.522 M/sec                    (87.30%)
+           1732679      LLC-load-misses           #   12.47% of all LL-cache hits     (75.98%)
+
+       0.650636186 seconds time elapsed
+
+
+
+
+result: ['645.706407', '0.992', '229', '0.355', '0', '0.000', '4906', '0.008', '895465660', '1.387', '573550653', '0.64', '64821577', '100.389', '6351128', '9.80', '244648239', '378.885', '1813539', '0.74', '13896787', '21.522', '1732679', '12.47', '0.650636186']
+
+
+4: /usr/bin/perf stat -d -- taskset -c 0 node algo-01/art-optimal.js
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 node algo-01/art-optimal.js':
+
+        643.732815      task-clock (msec)         #    0.995 CPUs utilized          
+               247      context-switches          #    0.384 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              4957      page-faults               #    0.008 M/sec                  
+         897585349      cycles                    #    1.394 GHz                      (86.73%)
+         566548235      instructions              #    0.63  insn per cycle           (87.29%)
+          66734733      branches                  #  103.668 M/sec                    (87.57%)
+           6285205      branch-misses             #    9.42% of all branches          (87.54%)
+         245321213      L1-dcache-loads           #  381.092 M/sec                    (86.99%)
+           1868274      L1-dcache-load-misses     #    0.76% of all L1-dcache hits    (87.58%)
+          14246105      LLC-loads                 #   22.130 M/sec                    (88.38%)
+           1724593      LLC-load-misses           #   12.11% of all LL-cache hits     (74.64%)
+
+       0.647234137 seconds time elapsed
+
+
+
+
+result: ['643.732815', '0.995', '247', '0.384', '0', '0.000', '4957', '0.008', '897585349', '1.394', '566548235', '0.63', '66734733', '103.668', '6285205', '9.42', '245321213', '381.092', '1868274', '0.76', '14246105', '22.130', '1724593', '12.11', '0.647234137']
+
+
+5: /usr/bin/perf stat -d -- taskset -c 0 node algo-01/art-optimal.js
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 node algo-01/art-optimal.js':
+
+        644.821048      task-clock (msec)         #    0.983 CPUs utilized          
+               240      context-switches          #    0.372 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              4903      page-faults               #    0.008 M/sec                  
+         894135716      cycles                    #    1.387 GHz                      (87.63%)
+         571628025      instructions              #    0.64  insn per cycle           (86.74%)
+          65065924      branches                  #  100.905 M/sec                    (87.52%)
+           6367607      branch-misses             #    9.79% of all branches          (88.34%)
+         243348090      L1-dcache-loads           #  377.389 M/sec                    (87.64%)
+           1813029      L1-dcache-load-misses     #    0.75% of all L1-dcache hits    (87.02%)
+          13626603      LLC-loads                 #   21.132 M/sec                    (87.61%)
+           1719702      LLC-load-misses           #   12.62% of all LL-cache hits     (75.13%)
+
+       0.656069583 seconds time elapsed
+
+
+
+
+result: ['644.821048', '0.983', '240', '0.372', '0', '0.000', '4903', '0.008', '894135716', '1.387', '571628025', '0.64', '65065924', '100.905', '6367607', '9.79', '243348090', '377.389', '1813029', '0.75', '13626603', '21.132', '1719702', '12.62', '0.656069583']
+
+
+6: /usr/bin/perf stat -d -- taskset -c 0 node algo-01/art-optimal.js
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 node algo-01/art-optimal.js':
+
+        642.131355      task-clock (msec)         #    0.937 CPUs utilized          
+               233      context-switches          #    0.363 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              4965      page-faults               #    0.008 M/sec                  
+         895352675      cycles                    #    1.394 GHz                      (86.42%)
+         565231722      instructions              #    0.63  insn per cycle           (87.48%)
+          66783166      branches                  #  104.002 M/sec                    (88.66%)
+           6336958      branch-misses             #    9.49% of all branches          (88.05%)
+         244262549      L1-dcache-loads           #  380.393 M/sec                    (86.96%)
+           1843398      L1-dcache-load-misses     #    0.75% of all L1-dcache hits    (87.54%)
+          13671080      LLC-loads                 #   21.290 M/sec                    (87.55%)
+           1767838      LLC-load-misses           #   12.93% of all LL-cache hits     (73.75%)
+
+       0.685550933 seconds time elapsed
+
+
+
+
+result: ['642.131355', '0.937', '233', '0.363', '0', '0.000', '4965', '0.008', '895352675', '1.394', '565231722', '0.63', '66783166', '104.002', '6336958', '9.49', '244262549', '380.393', '1843398', '0.75', '13671080', '21.290', '1767838', '12.93', '0.685550933']
+
+
+7: /usr/bin/perf stat -d -- taskset -c 0 node algo-01/art-optimal.js
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 node algo-01/art-optimal.js':
+
+        643.575680      task-clock (msec)         #    0.995 CPUs utilized          
+               237      context-switches          #    0.368 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              4960      page-faults               #    0.008 M/sec                  
+         897427355      cycles                    #    1.394 GHz                      (86.68%)
+         567662210      instructions              #    0.63  insn per cycle           (87.31%)
+          66636544      branches                  #  103.541 M/sec                    (87.56%)
+           6334698      branch-misses             #    9.51% of all branches          (87.53%)
+         245520820      L1-dcache-loads           #  381.495 M/sec                    (87.06%)
+           1847681      L1-dcache-load-misses     #    0.75% of all L1-dcache hits    (87.62%)
+          14202500      LLC-loads                 #   22.068 M/sec                    (88.34%)
+           1728960      LLC-load-misses           #   12.17% of all LL-cache hits     (74.58%)
+
+       0.646797437 seconds time elapsed
+
+
+
+
+result: ['643.575680', '0.995', '237', '0.368', '0', '0.000', '4960', '0.008', '897427355', '1.394', '567662210', '0.63', '66636544', '103.541', '6334698', '9.51', '245520820', '381.495', '1847681', '0.75', '14202500', '22.068', '1728960', '12.17', '0.646797437']
+
+
+8: /usr/bin/perf stat -d -- taskset -c 0 node algo-01/art-optimal.js
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 node algo-01/art-optimal.js':
+
+        642.184481      task-clock (msec)         #    0.990 CPUs utilized          
+               224      context-switches          #    0.349 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              4963      page-faults               #    0.008 M/sec                  
+         895438332      cycles                    #    1.394 GHz                      (86.89%)
+         564704195      instructions              #    0.63  insn per cycle           (87.02%)
+          66716832      branches                  #  103.890 M/sec                    (88.63%)
+           6408205      branch-misses             #    9.61% of all branches          (88.52%)
+         243759787      L1-dcache-loads           #  379.579 M/sec                    (86.97%)
+           1816336      L1-dcache-load-misses     #    0.75% of all L1-dcache hits    (87.55%)
+          13425467      LLC-loads                 #   20.906 M/sec                    (87.55%)
+           1756123      LLC-load-misses           #   13.08% of all LL-cache hits     (73.76%)
+
+       0.648493809 seconds time elapsed
+
+
+
+
+result: ['642.184481', '0.990', '224', '0.349', '0', '0.000', '4963', '0.008', '895438332', '1.394', '564704195', '0.63', '66716832', '103.890', '6408205', '9.61', '243759787', '379.579', '1816336', '0.75', '13425467', '20.906', '1756123', '13.08', '0.648493809']
+
+
+9: /usr/bin/perf stat -d -- taskset -c 0 node algo-01/art-optimal.js
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 node algo-01/art-optimal.js':
+
+        641.699483      task-clock (msec)         #    0.992 CPUs utilized          
+               233      context-switches          #    0.363 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              4964      page-faults               #    0.008 M/sec                  
+         894663280      cycles                    #    1.394 GHz                      (86.60%)
+         567457971      instructions              #    0.63  insn per cycle           (87.31%)
+          66451430      branches                  #  103.555 M/sec                    (87.53%)
+           6342919      branch-misses             #    9.55% of all branches          (86.66%)
+         243785526      L1-dcache-loads           #  379.906 M/sec                    (86.94%)
+           1840722      L1-dcache-load-misses     #    0.76% of all L1-dcache hits    (87.54%)
+          13496476      LLC-loads                 #   21.032 M/sec                    (88.71%)
+           1808782      LLC-load-misses           #   13.40% of all LL-cache hits     (75.33%)
+
+       0.646604620 seconds time elapsed
+
+
+
+
+result: ['641.699483', '0.992', '233', '0.363', '0', '0.000', '4964', '0.008', '894663280', '1.394', '567457971', '0.63', '66451430', '103.555', '6342919', '9.55', '243785526', '379.906', '1840722', '0.76', '13496476', '21.032', '1808782', '13.40', '0.646604620']
+
+
+10: /usr/bin/perf stat -d -- taskset -c 0 node algo-01/art-optimal.js
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 node algo-01/art-optimal.js':
+
+        655.714065      task-clock (msec)         #    0.986 CPUs utilized          
+               235      context-switches          #    0.358 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              4911      page-faults               #    0.007 M/sec                  
+         894603511      cycles                    #    1.364 GHz                      (87.79%)
+         574687055      instructions              #    0.64  insn per cycle           (87.80%)
+          65151308      branches                  #   99.359 M/sec                    (85.89%)
+           6315259      branch-misses             #    9.69% of all branches          (87.86%)
+         242803768      L1-dcache-loads           #  370.289 M/sec                    (87.81%)
+           1802892      L1-dcache-load-misses     #    0.74% of all L1-dcache hits    (87.24%)
+          13723502      LLC-loads                 #   20.929 M/sec                    (87.80%)
+           1725141      LLC-load-misses           #   12.57% of all LL-cache hits     (75.60%)
+
+       0.664848831 seconds time elapsed
+
+
+
+
+result: ['655.714065', '0.986', '235', '0.358', '0', '0.000', '4911', '0.007', '894603511', '1.364', '574687055', '0.64', '65151308', '99.359', '6315259', '9.69', '242803768', '370.289', '1802892', '0.74', '13723502', '20.929', '1725141', '12.57', '0.664848831']
+
+
+1: /usr/bin/time -v taskset -c 0 node algo-01/art-optimal.js
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 node algo-01/art-optimal.js"
+	User time (seconds): 0.59
+	System time (seconds): 0.09
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.69
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 40820
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 4945
+	Voluntary context switches: 115
+	Involuntary context switches: 114
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.59', '0.09', '99', '0:00.69', '0', '0', '0', '0', '40820', '0', '0', '4945', '115', '114', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+2: /usr/bin/time -v taskset -c 0 node algo-01/art-optimal.js
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 node algo-01/art-optimal.js"
+	User time (seconds): 0.60
+	System time (seconds): 0.08
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.69
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 40904
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 4920
+	Voluntary context switches: 129
+	Involuntary context switches: 121
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.60', '0.08', '98', '0:00.69', '0', '0', '0', '0', '40904', '0', '0', '4920', '129', '121', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+3: /usr/bin/time -v taskset -c 0 node algo-01/art-optimal.js
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 node algo-01/art-optimal.js"
+	User time (seconds): 0.63
+	System time (seconds): 0.05
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.69
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 40924
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 4995
+	Voluntary context switches: 125
+	Involuntary context switches: 118
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.63', '0.05', '98', '0:00.69', '0', '0', '0', '0', '40924', '0', '0', '4995', '125', '118', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+4: /usr/bin/time -v taskset -c 0 node algo-01/art-optimal.js
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 node algo-01/art-optimal.js"
+	User time (seconds): 0.62
+	System time (seconds): 0.04
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.67
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 40776
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 4942
+	Voluntary context switches: 119
+	Involuntary context switches: 116
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.62', '0.04', '98', '0:00.67', '0', '0', '0', '0', '40776', '0', '0', '4942', '119', '116', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+5: /usr/bin/time -v taskset -c 0 node algo-01/art-optimal.js
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 node algo-01/art-optimal.js"
+	User time (seconds): 0.62
+	System time (seconds): 0.05
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.68
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 41284
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 4943
+	Voluntary context switches: 122
+	Involuntary context switches: 119
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.62', '0.05', '99', '0:00.68', '0', '0', '0', '0', '41284', '0', '0', '4943', '122', '119', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+6: /usr/bin/time -v taskset -c 0 node algo-01/art-optimal.js
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 node algo-01/art-optimal.js"
+	User time (seconds): 0.61
+	System time (seconds): 0.06
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.69
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 40916
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 4991
+	Voluntary context switches: 126
+	Involuntary context switches: 119
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.61', '0.06', '99', '0:00.69', '0', '0', '0', '0', '40916', '0', '0', '4991', '126', '119', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+7: /usr/bin/time -v taskset -c 0 node algo-01/art-optimal.js
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 node algo-01/art-optimal.js"
+	User time (seconds): 0.61
+	System time (seconds): 0.05
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.67
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 40672
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 4944
+	Voluntary context switches: 119
+	Involuntary context switches: 114
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.61', '0.05', '98', '0:00.67', '0', '0', '0', '0', '40672', '0', '0', '4944', '119', '114', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+8: /usr/bin/time -v taskset -c 0 node algo-01/art-optimal.js
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 node algo-01/art-optimal.js"
+	User time (seconds): 0.63
+	System time (seconds): 0.04
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.68
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 40816
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 4938
+	Voluntary context switches: 117
+	Involuntary context switches: 118
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.63', '0.04', '99', '0:00.68', '0', '0', '0', '0', '40816', '0', '0', '4938', '117', '118', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+9: /usr/bin/time -v taskset -c 0 node algo-01/art-optimal.js
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 node algo-01/art-optimal.js"
+	User time (seconds): 0.54
+	System time (seconds): 0.12
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.68
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 40828
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 4940
+	Voluntary context switches: 117
+	Involuntary context switches: 114
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.54', '0.12', '99', '0:00.68', '0', '0', '0', '0', '40828', '0', '0', '4940', '117', '114', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+10: /usr/bin/time -v taskset -c 0 node algo-01/art-optimal.js
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 node algo-01/art-optimal.js"
+	User time (seconds): 0.62
+	System time (seconds): 0.05
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.69
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 41144
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 4997
+	Voluntary context switches: 116
+	Involuntary context switches: 110
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.62', '0.05', '98', '0:00.69', '0', '0', '0', '0', '41144', '0', '0', '4997', '116', '110', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+1: /usr/bin/perf stat -d -- taskset -c 0 php -f algo-01/art-optimal.php
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 php -f algo-01/art-optimal.php':
+
+        376.996562      task-clock (msec)         #    0.970 CPUs utilized          
+                 5      context-switches          #    0.013 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              3034      page-faults               #    0.008 M/sec                  
+         509405093      cycles                    #    1.351 GHz                      (86.74%)
+         360906952      instructions              #    0.71  insn per cycle           (86.73%)
+          44983916      branches                  #  119.322 M/sec                    (88.20%)
+           2285070      branch-misses             #    5.08% of all branches          (86.73%)
+         179026794      L1-dcache-loads           #  474.876 M/sec                    (86.72%)
+            580372      L1-dcache-load-misses     #    0.32% of all L1-dcache hits    (87.49%)
+           3516881      LLC-loads                 #    9.329 M/sec                    (89.94%)
+            502286      LLC-load-misses           #   14.28% of all LL-cache hits     (74.18%)
+
+       0.388837869 seconds time elapsed
+
+
+
+
+result: ['376.996562', '0.970', '5', '0.013', '0', '0.000', '3034', '0.008', '509405093', '1.351', '360906952', '0.71', '44983916', '119.322', '2285070', '5.08', '179026794', '474.876', '580372', '0.32', '3516881', '9.329', '502286', '14.28', '0.388837869']
+
+
+2: /usr/bin/perf stat -d -- taskset -c 0 php -f algo-01/art-optimal.php
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 php -f algo-01/art-optimal.php':
+
+        364.427449      task-clock (msec)         #    0.979 CPUs utilized          
+                 4      context-switches          #    0.011 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              3034      page-faults               #    0.008 M/sec                  
+         509006174      cycles                    #    1.397 GHz                      (85.08%)
+         362277357      instructions              #    0.71  insn per cycle           (86.28%)
+          45392653      branches                  #  124.559 M/sec                    (86.29%)
+           2552438      branch-misses             #    5.62% of all branches          (88.00%)
+         177377937      L1-dcache-loads           #  486.730 M/sec                    (89.03%)
+            658804      L1-dcache-load-misses     #    0.37% of all L1-dcache hits    (89.04%)
+           3509896      LLC-loads                 #    9.631 M/sec                    (89.02%)
+            359552      LLC-load-misses           #   10.24% of all LL-cache hits     (72.34%)
+
+       0.372283570 seconds time elapsed
+
+
+
+
+result: ['364.427449', '0.979', '4', '0.011', '0', '0.000', '3034', '0.008', '509006174', '1.397', '362277357', '0.71', '45392653', '124.559', '2552438', '5.62', '177377937', '486.730', '658804', '0.37', '3509896', '9.631', '359552', '10.24', '0.372283570']
+
+
+3: /usr/bin/perf stat -d -- taskset -c 0 php -f algo-01/art-optimal.php
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 php -f algo-01/art-optimal.php':
+
+        363.187865      task-clock (msec)         #    0.982 CPUs utilized          
+                 3      context-switches          #    0.008 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              3032      page-faults               #    0.008 M/sec                  
+         507250590      cycles                    #    1.397 GHz                      (84.72%)
+         362544476      instructions              #    0.71  insn per cycle           (86.23%)
+          45420287      branches                  #  125.060 M/sec                    (86.24%)
+           2415186      branch-misses             #    5.32% of all branches          (88.41%)
+         177464531      L1-dcache-loads           #  488.630 M/sec                    (89.00%)
+            680646      L1-dcache-load-misses     #    0.38% of all L1-dcache hits    (89.00%)
+           3536942      LLC-loads                 #    9.739 M/sec                    (88.99%)
+            348863      LLC-load-misses           #    9.86% of all LL-cache hits     (72.13%)
+
+       0.369771711 seconds time elapsed
+
+
+
+
+result: ['363.187865', '0.982', '3', '0.008', '0', '0.000', '3032', '0.008', '507250590', '1.397', '362544476', '0.71', '45420287', '125.060', '2415186', '5.32', '177464531', '488.630', '680646', '0.38', '3536942', '9.739', '348863', '9.86', '0.369771711']
+
+
+4: /usr/bin/perf stat -d -- taskset -c 0 php -f algo-01/art-optimal.php
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 php -f algo-01/art-optimal.php':
+
+        364.046769      task-clock (msec)         #    0.981 CPUs utilized          
+                 5      context-switches          #    0.014 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              3030      page-faults               #    0.008 M/sec                  
+         508477665      cycles                    #    1.397 GHz                      (87.72%)
+         362943526      instructions              #    0.71  insn per cycle           (86.26%)
+          44903896      branches                  #  123.347 M/sec                    (86.24%)
+           2521719      branch-misses             #    5.62% of all branches          (86.30%)
+         177354308      L1-dcache-loads           #  487.175 M/sec                    (88.68%)
+            664542      L1-dcache-load-misses     #    0.37% of all L1-dcache hits    (89.02%)
+           3523354      LLC-loads                 #    9.678 M/sec                    (89.02%)
+            470914      LLC-load-misses           #   13.37% of all LL-cache hits     (74.48%)
+
+       0.370920046 seconds time elapsed
+
+
+
+
+result: ['364.046769', '0.981', '5', '0.014', '0', '0.000', '3030', '0.008', '508477665', '1.397', '362943526', '0.71', '44903896', '123.347', '2521719', '5.62', '177354308', '487.175', '664542', '0.37', '3523354', '9.678', '470914', '13.37', '0.370920046']
+
+
+5: /usr/bin/perf stat -d -- taskset -c 0 php -f algo-01/art-optimal.php
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 php -f algo-01/art-optimal.php':
+
+        364.781147      task-clock (msec)         #    0.982 CPUs utilized          
+                 3      context-switches          #    0.008 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              3029      page-faults               #    0.008 M/sec                  
+         509503919      cycles                    #    1.397 GHz                      (84.79%)
+         362493100      instructions              #    0.71  insn per cycle           (86.30%)
+          45378019      branches                  #  124.398 M/sec                    (86.30%)
+           2402926      branch-misses             #    5.30% of all branches          (88.29%)
+         177299167      L1-dcache-loads           #  486.043 M/sec                    (89.04%)
+            888042      L1-dcache-load-misses     #    0.50% of all L1-dcache hits    (89.05%)
+           3913241      LLC-loads                 #   10.728 M/sec                    (89.03%)
+            353004      LLC-load-misses           #    9.02% of all LL-cache hits     (71.99%)
+
+       0.371369477 seconds time elapsed
+
+
+
+
+result: ['364.781147', '0.982', '3', '0.008', '0', '0.000', '3029', '0.008', '509503919', '1.397', '362493100', '0.71', '45378019', '124.398', '2402926', '5.30', '177299167', '486.043', '888042', '0.50', '3913241', '10.728', '353004', '9.02', '0.371369477']
+
+
+6: /usr/bin/perf stat -d -- taskset -c 0 php -f algo-01/art-optimal.php
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 php -f algo-01/art-optimal.php':
+
+        367.614897      task-clock (msec)         #    0.985 CPUs utilized          
+                 4      context-switches          #    0.011 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              3033      page-faults               #    0.008 M/sec                  
+         513427676      cycles                    #    1.397 GHz                      (84.75%)
+         362719625      instructions              #    0.71  insn per cycle           (86.41%)
+          45275265      branches                  #  123.159 M/sec                    (86.40%)
+           2551616      branch-misses             #    5.64% of all branches          (88.16%)
+         177151843      L1-dcache-loads           #  481.895 M/sec                    (89.13%)
+            668048      L1-dcache-load-misses     #    0.38% of all L1-dcache hits    (89.13%)
+           4103987      LLC-loads                 #   11.164 M/sec                    (89.12%)
+            356621      LLC-load-misses           #    8.69% of all LL-cache hits     (71.64%)
+
+       0.373161508 seconds time elapsed
+
+
+
+
+result: ['367.614897', '0.985', '4', '0.011', '0', '0.000', '3033', '0.008', '513427676', '1.397', '362719625', '0.71', '45275265', '123.159', '2551616', '5.64', '177151843', '481.895', '668048', '0.38', '4103987', '11.164', '356621', '8.69', '0.373161508']
+
+
+7: /usr/bin/perf stat -d -- taskset -c 0 php -f algo-01/art-optimal.php
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 php -f algo-01/art-optimal.php':
+
+        384.128490      task-clock (msec)         #    0.986 CPUs utilized          
+                 3      context-switches          #    0.008 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              3029      page-faults               #    0.008 M/sec                  
+         514093699      cycles                    #    1.338 GHz                      (86.98%)
+         360571997      instructions              #    0.70  insn per cycle           (86.98%)
+          44758957      branches                  #  116.521 M/sec                    (87.86%)
+           2523405      branch-misses             #    5.64% of all branches          (86.98%)
+         179333721      L1-dcache-loads           #  466.859 M/sec                    (86.97%)
+            591925      L1-dcache-load-misses     #    0.33% of all L1-dcache hits    (87.01%)
+           4166076      LLC-loads                 #   10.846 M/sec                    (89.39%)
+            496345      LLC-load-misses           #   11.91% of all LL-cache hits     (74.81%)
+
+       0.389613321 seconds time elapsed
+
+
+
+
+result: ['384.128490', '0.986', '3', '0.008', '0', '0.000', '3029', '0.008', '514093699', '1.338', '360571997', '0.70', '44758957', '116.521', '2523405', '5.64', '179333721', '466.859', '591925', '0.33', '4166076', '10.846', '496345', '11.91', '0.389613321']
+
+
+8: /usr/bin/perf stat -d -- taskset -c 0 php -f algo-01/art-optimal.php
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 php -f algo-01/art-optimal.php':
+
+        378.666721      task-clock (msec)         #    0.977 CPUs utilized          
+                 4      context-switches          #    0.011 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              3030      page-faults               #    0.008 M/sec                  
+         515979731      cycles                    #    1.363 GHz                      (86.79%)
+         362276157      instructions              #    0.70  insn per cycle           (86.80%)
+          44284143      branches                  #  116.948 M/sec                    (85.84%)
+           2533350      branch-misses             #    5.72% of all branches          (86.84%)
+         180260733      L1-dcache-loads           #  476.041 M/sec                    (87.13%)
+            617014      L1-dcache-load-misses     #    0.34% of all L1-dcache hits    (89.44%)
+           4061747      LLC-loads                 #   10.726 M/sec                    (89.45%)
+            499588      LLC-load-misses           #   12.30% of all LL-cache hits     (74.51%)
+
+       0.387413596 seconds time elapsed
+
+
+
+
+result: ['378.666721', '0.977', '4', '0.011', '0', '0.000', '3030', '0.008', '515979731', '1.363', '362276157', '0.70', '44284143', '116.948', '2533350', '5.72', '180260733', '476.041', '617014', '0.34', '4061747', '10.726', '499588', '12.30', '0.387413596']
+
+
+9: /usr/bin/perf stat -d -- taskset -c 0 php -f algo-01/art-optimal.php
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 php -f algo-01/art-optimal.php':
+
+        364.445730      task-clock (msec)         #    0.978 CPUs utilized          
+                 4      context-switches          #    0.011 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              3034      page-faults               #    0.008 M/sec                  
+         509032250      cycles                    #    1.397 GHz                      (85.34%)
+         362717554      instructions              #    0.71  insn per cycle           (86.29%)
+          45317329      branches                  #  124.346 M/sec                    (86.31%)
+           2416192      branch-misses             #    5.33% of all branches          (88.09%)
+         177129081      L1-dcache-loads           #  486.023 M/sec                    (89.03%)
+            669619      L1-dcache-load-misses     #    0.38% of all L1-dcache hits    (89.03%)
+           3710270      LLC-loads                 #   10.181 M/sec                    (89.02%)
+            351981      LLC-load-misses           #    9.49% of all LL-cache hits     (72.22%)
+
+       0.372691265 seconds time elapsed
+
+
+
+
+result: ['364.445730', '0.978', '4', '0.011', '0', '0.000', '3034', '0.008', '509032250', '1.397', '362717554', '0.71', '45317329', '124.346', '2416192', '5.33', '177129081', '486.023', '669619', '0.38', '3710270', '10.181', '351981', '9.49', '0.372691265']
+
+
+10: /usr/bin/perf stat -d -- taskset -c 0 php -f algo-01/art-optimal.php
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 php -f algo-01/art-optimal.php':
+
+        364.646408      task-clock (msec)         #    0.979 CPUs utilized          
+                 4      context-switches          #    0.011 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              3034      page-faults               #    0.008 M/sec                  
+         509299834      cycles                    #    1.397 GHz                      (85.28%)
+         362760038      instructions              #    0.71  insn per cycle           (86.29%)
+          45313281      branches                  #  124.266 M/sec                    (86.33%)
+           2420869      branch-misses             #    5.34% of all branches          (88.11%)
+         177138936      L1-dcache-loads           #  485.783 M/sec                    (89.04%)
+            714912      L1-dcache-load-misses     #    0.40% of all L1-dcache hits    (89.04%)
+           3803382      LLC-loads                 #   10.430 M/sec                    (89.03%)
+            354673      LLC-load-misses           #    9.33% of all LL-cache hits     (72.16%)
+
+       0.372640124 seconds time elapsed
+
+
+
+
+result: ['364.646408', '0.979', '4', '0.011', '0', '0.000', '3034', '0.008', '509299834', '1.397', '362760038', '0.71', '45313281', '124.266', '2420869', '5.34', '177138936', '485.783', '714912', '0.40', '3803382', '10.430', '354673', '9.33', '0.372640124']
+
+
+1: /usr/bin/time -v taskset -c 0 php -f algo-01/art-optimal.php
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 php -f algo-01/art-optimal.php"
+	User time (seconds): 0.34
+	System time (seconds): 0.04
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.39
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 19228
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 3061
+	Voluntary context switches: 1
+	Involuntary context switches: 6
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.34', '0.04', '99', '0:00.39', '0', '0', '0', '0', '19228', '0', '0', '3061', '1', '6', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+2: /usr/bin/time -v taskset -c 0 php -f algo-01/art-optimal.php
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 php -f algo-01/art-optimal.php"
+	User time (seconds): 0.38
+	System time (seconds): 0.04
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.42
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 19344
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 3065
+	Voluntary context switches: 2
+	Involuntary context switches: 11
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.38', '0.04', '98', '0:00.42', '0', '0', '0', '0', '19344', '0', '0', '3065', '2', '11', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+3: /usr/bin/time -v taskset -c 0 php -f algo-01/art-optimal.php
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 php -f algo-01/art-optimal.php"
+	User time (seconds): 0.37
+	System time (seconds): 0.03
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.42
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 19184
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 3064
+	Voluntary context switches: 1
+	Involuntary context switches: 7
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.37', '0.03', '99', '0:00.42', '0', '0', '0', '0', '19184', '0', '0', '3064', '1', '7', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+4: /usr/bin/time -v taskset -c 0 php -f algo-01/art-optimal.php
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 php -f algo-01/art-optimal.php"
+	User time (seconds): 0.35
+	System time (seconds): 0.05
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.42
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 19396
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 3065
+	Voluntary context switches: 2
+	Involuntary context switches: 8
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.35', '0.05', '98', '0:00.42', '0', '0', '0', '0', '19396', '0', '0', '3065', '2', '8', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+5: /usr/bin/time -v taskset -c 0 php -f algo-01/art-optimal.php
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 php -f algo-01/art-optimal.php"
+	User time (seconds): 0.37
+	System time (seconds): 0.03
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.42
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 19512
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 3067
+	Voluntary context switches: 2
+	Involuntary context switches: 6
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.37', '0.03', '98', '0:00.42', '0', '0', '0', '0', '19512', '0', '0', '3067', '2', '6', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+6: /usr/bin/time -v taskset -c 0 php -f algo-01/art-optimal.php
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 php -f algo-01/art-optimal.php"
+	User time (seconds): 0.34
+	System time (seconds): 0.06
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.42
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 19328
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 3064
+	Voluntary context switches: 2
+	Involuntary context switches: 9
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.34', '0.06', '98', '0:00.42', '0', '0', '0', '0', '19328', '0', '0', '3064', '2', '9', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+7: /usr/bin/time -v taskset -c 0 php -f algo-01/art-optimal.php
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 php -f algo-01/art-optimal.php"
+	User time (seconds): 0.35
+	System time (seconds): 0.04
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.39
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 19272
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 3062
+	Voluntary context switches: 2
+	Involuntary context switches: 6
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.35', '0.04', '98', '0:00.39', '0', '0', '0', '0', '19272', '0', '0', '3062', '2', '6', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+8: /usr/bin/time -v taskset -c 0 php -f algo-01/art-optimal.php
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 php -f algo-01/art-optimal.php"
+	User time (seconds): 0.34
+	System time (seconds): 0.07
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.42
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 19520
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 3066
+	Voluntary context switches: 2
+	Involuntary context switches: 15
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.34', '0.07', '98', '0:00.42', '0', '0', '0', '0', '19520', '0', '0', '3066', '2', '15', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+9: /usr/bin/time -v taskset -c 0 php -f algo-01/art-optimal.php
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 php -f algo-01/art-optimal.php"
+	User time (seconds): 0.36
+	System time (seconds): 0.05
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.41
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 19524
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 3069
+	Voluntary context switches: 2
+	Involuntary context switches: 2
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.36', '0.05', '99', '0:00.41', '0', '0', '0', '0', '19524', '0', '0', '3069', '2', '2', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+10: /usr/bin/time -v taskset -c 0 php -f algo-01/art-optimal.php
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 php -f algo-01/art-optimal.php"
+	User time (seconds): 0.37
+	System time (seconds): 0.04
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.41
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 19196
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 3063
+	Voluntary context switches: 2
+	Involuntary context switches: 5
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.37', '0.04', '98', '0:00.41', '0', '0', '0', '0', '19196', '0', '0', '3063', '2', '5', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+1: /usr/bin/perf stat -d -- taskset -c 0 python3 algo-01/art-optimal.py
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 python3 algo-01/art-optimal.py':
+
+        887.064325      task-clock (msec)         #    0.994 CPUs utilized          
+                10      context-switches          #    0.011 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              2327      page-faults               #    0.003 M/sec                  
+        1234988777      cycles                    #    1.392 GHz                      (87.12%)
+         864162462      instructions              #    0.70  insn per cycle           (87.60%)
+          57003120      branches                  #   64.260 M/sec                    (87.60%)
+           9546486      branch-misses             #   16.75% of all branches          (87.60%)
+         382946687      L1-dcache-loads           #  431.701 M/sec                    (87.86%)
+            849345      L1-dcache-load-misses     #    0.22% of all L1-dcache hits    (87.59%)
+           9311601      LLC-loads                 #   10.497 M/sec                    (87.62%)
+            661210      LLC-load-misses           #    7.10% of all LL-cache hits     (74.12%)
+
+       0.892694811 seconds time elapsed
+
+
+
+
+result: ['887.064325', '0.994', '10', '0.011', '0', '0.000', '2327', '0.003', '1234988777', '1.392', '864162462', '0.70', '57003120', '64.260', '9546486', '16.75', '382946687', '431.701', '849345', '0.22', '9311601', '10.497', '661210', '7.10', '0.892694811']
+
+
+2: /usr/bin/perf stat -d -- taskset -c 0 python3 algo-01/art-optimal.py
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 python3 algo-01/art-optimal.py':
+
+        860.683283      task-clock (msec)         #    0.991 CPUs utilized          
+                 6      context-switches          #    0.007 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              2329      page-faults               #    0.003 M/sec                  
+        1203043396      cycles                    #    1.398 GHz                      (86.78%)
+         837630630      instructions              #    0.70  insn per cycle           (87.22%)
+          55277332      branches                  #   64.225 M/sec                    (87.23%)
+           9991194      branch-misses             #   18.07% of all branches          (87.24%)
+         378970900      L1-dcache-loads           #  440.314 M/sec                    (87.29%)
+            908933      L1-dcache-load-misses     #    0.24% of all L1-dcache hits    (88.38%)
+           9110448      LLC-loads                 #   10.585 M/sec                    (88.38%)
+            653916      LLC-load-misses           #    7.18% of all LL-cache hits     (74.25%)
+
+       0.868760588 seconds time elapsed
+
+
+
+
+result: ['860.683283', '0.991', '6', '0.007', '0', '0.000', '2329', '0.003', '1203043396', '1.398', '837630630', '0.70', '55277332', '64.225', '9991194', '18.07', '378970900', '440.314', '908933', '0.24', '9110448', '10.585', '653916', '7.18', '0.868760588']
+
+
+3: /usr/bin/perf stat -d -- taskset -c 0 python3 algo-01/art-optimal.py
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 python3 algo-01/art-optimal.py':
+
+        832.332606      task-clock (msec)         #    0.989 CPUs utilized          
+                 8      context-switches          #    0.010 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              2327      page-faults               #    0.003 M/sec                  
+        1158469725      cycles                    #    1.392 GHz                      (86.82%)
+         801463094      instructions              #    0.69  insn per cycle           (86.79%)
+          53511686      branches                  #   64.291 M/sec                    (86.81%)
+           8497400      branch-misses             #   15.88% of all branches          (87.53%)
+         371431804      L1-dcache-loads           #  446.254 M/sec                    (87.99%)
+           1170376      L1-dcache-load-misses     #    0.32% of all L1-dcache hits    (87.98%)
+          10149265      LLC-loads                 #   12.194 M/sec                    (88.73%)
+            651894      LLC-load-misses           #    6.42% of all LL-cache hits     (74.17%)
+
+       0.841953876 seconds time elapsed
+
+
+
+
+result: ['832.332606', '0.989', '8', '0.010', '0', '0.000', '2327', '0.003', '1158469725', '1.392', '801463094', '0.69', '53511686', '64.291', '8497400', '15.88', '371431804', '446.254', '1170376', '0.32', '10149265', '12.194', '651894', '6.42', '0.841953876']
+
+
+4: /usr/bin/perf stat -d -- taskset -c 0 python3 algo-01/art-optimal.py
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 python3 algo-01/art-optimal.py':
+
+        860.819952      task-clock (msec)         #    0.996 CPUs utilized          
+                12      context-switches          #    0.014 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              2326      page-faults               #    0.003 M/sec                  
+        1146022938      cycles                    #    1.331 GHz                      (87.25%)
+         796928197      instructions              #    0.70  insn per cycle           (87.23%)
+          53081417      branches                  #   61.664 M/sec                    (87.24%)
+           8441946      branch-misses             #   15.90% of all branches          (87.27%)
+         371224606      L1-dcache-loads           #  431.245 M/sec                    (87.22%)
+            822563      L1-dcache-load-misses     #    0.22% of all L1-dcache hits    (87.77%)
+           8554866      LLC-loads                 #    9.938 M/sec                    (88.38%)
+            721049      LLC-load-misses           #    8.43% of all LL-cache hits     (74.89%)
+
+       0.863927652 seconds time elapsed
+
+
+
+
+result: ['860.819952', '0.996', '12', '0.014', '0', '0.000', '2326', '0.003', '1146022938', '1.331', '796928197', '0.70', '53081417', '61.664', '8441946', '15.90', '371224606', '431.245', '822563', '0.22', '8554866', '9.938', '721049', '8.43', '0.863927652']
+
+
+5: /usr/bin/perf stat -d -- taskset -c 0 python3 algo-01/art-optimal.py
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 python3 algo-01/art-optimal.py':
+
+        866.733338      task-clock (msec)         #    0.989 CPUs utilized          
+                 9      context-switches          #    0.010 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              2328      page-faults               #    0.003 M/sec                  
+        1206607125      cycles                    #    1.392 GHz                      (87.34%)
+         824135350      instructions              #    0.68  insn per cycle           (86.91%)
+          54237353      branches                  #   62.577 M/sec                    (87.32%)
+          11002523      branch-misses             #   20.29% of all branches          (87.33%)
+         377245858      L1-dcache-loads           #  435.250 M/sec                    (87.31%)
+           1114165      L1-dcache-load-misses     #    0.30% of all L1-dcache hits    (87.48%)
+          10040785      LLC-loads                 #   11.585 M/sec                    (88.47%)
+            788718      LLC-load-misses           #    7.86% of all LL-cache hits     (75.19%)
+
+       0.876660474 seconds time elapsed
+
+
+
+
+result: ['866.733338', '0.989', '9', '0.010', '0', '0.000', '2328', '0.003', '1206607125', '1.392', '824135350', '0.68', '54237353', '62.577', '11002523', '20.29', '377245858', '435.250', '1114165', '0.30', '10040785', '11.585', '788718', '7.86', '0.876660474']
+
+
+6: /usr/bin/perf stat -d -- taskset -c 0 python3 algo-01/art-optimal.py
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 python3 algo-01/art-optimal.py':
+
+        843.087762      task-clock (msec)         #    0.992 CPUs utilized          
+                 5      context-switches          #    0.006 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              2326      page-faults               #    0.003 M/sec                  
+        1178482038      cycles                    #    1.398 GHz                      (86.98%)
+         820251517      instructions              #    0.70  insn per cycle           (86.95%)
+          54539017      branches                  #   64.690 M/sec                    (86.96%)
+           9309869      branch-misses             #   17.07% of all branches          (88.02%)
+         374091616      L1-dcache-loads           #  443.716 M/sec                    (88.14%)
+           1211828      L1-dcache-load-misses     #    0.32% of all L1-dcache hits    (88.14%)
+           9534146      LLC-loads                 #   11.309 M/sec                    (87.61%)
+            625647      LLC-load-misses           #    6.56% of all LL-cache hits     (74.18%)
+
+       0.850261935 seconds time elapsed
+
+
+
+
+result: ['843.087762', '0.992', '5', '0.006', '0', '0.000', '2326', '0.003', '1178482038', '1.398', '820251517', '0.70', '54539017', '64.690', '9309869', '17.07', '374091616', '443.716', '1211828', '0.32', '9534146', '11.309', '625647', '6.56', '0.850261935']
+
+
+7: /usr/bin/perf stat -d -- taskset -c 0 python3 algo-01/art-optimal.py
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 python3 algo-01/art-optimal.py':
+
+        862.997034      task-clock (msec)         #    0.997 CPUs utilized          
+                 5      context-switches          #    0.006 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              2326      page-faults               #    0.003 M/sec                  
+        1186479135      cycles                    #    1.375 GHz                      (87.25%)
+         818179362      instructions              #    0.69  insn per cycle           (87.25%)
+          54045230      branches                  #   62.625 M/sec                    (87.26%)
+           9324930      branch-misses             #   17.25% of all branches          (87.27%)
+         375073262      L1-dcache-loads           #  434.617 M/sec                    (87.26%)
+           1089035      L1-dcache-load-misses     #    0.29% of all L1-dcache hits    (87.62%)
+           9874522      LLC-loads                 #   11.442 M/sec                    (88.41%)
+            791793      LLC-load-misses           #    8.02% of all LL-cache hits     (74.92%)
+
+       0.865544330 seconds time elapsed
+
+
+
+
+result: ['862.997034', '0.997', '5', '0.006', '0', '0.000', '2326', '0.003', '1186479135', '1.375', '818179362', '0.69', '54045230', '62.625', '9324930', '17.25', '375073262', '434.617', '1089035', '0.29', '9874522', '11.442', '791793', '8.02', '0.865544330']
+
+
+8: /usr/bin/perf stat -d -- taskset -c 0 python3 algo-01/art-optimal.py
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 python3 algo-01/art-optimal.py':
+
+        873.616877      task-clock (msec)         #    0.990 CPUs utilized          
+                 7      context-switches          #    0.008 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              2325      page-faults               #    0.003 M/sec                  
+        1216058724      cycles                    #    1.392 GHz                      (87.44%)
+         835119928      instructions              #    0.69  insn per cycle           (87.41%)
+          55502957      branches                  #   63.532 M/sec                    (88.03%)
+          10894280      branch-misses             #   19.63% of all branches          (87.42%)
+         377718011      L1-dcache-loads           #  432.361 M/sec                    (87.41%)
+            877751      L1-dcache-load-misses     #    0.23% of all L1-dcache hits    (87.43%)
+           9651301      LLC-loads                 #   11.048 M/sec                    (87.42%)
+            762893      LLC-load-misses           #    7.90% of all LL-cache hits     (74.89%)
+
+       0.882334376 seconds time elapsed
+
+
+
+
+result: ['873.616877', '0.990', '7', '0.008', '0', '0.000', '2325', '0.003', '1216058724', '1.392', '835119928', '0.69', '55502957', '63.532', '10894280', '19.63', '377718011', '432.361', '877751', '0.23', '9651301', '11.048', '762893', '7.90', '0.882334376']
+
+
+9: /usr/bin/perf stat -d -- taskset -c 0 python3 algo-01/art-optimal.py
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 python3 algo-01/art-optimal.py':
+
+        866.627500      task-clock (msec)         #    0.988 CPUs utilized          
+                 9      context-switches          #    0.010 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              2326      page-faults               #    0.003 M/sec                  
+        1206358432      cycles                    #    1.392 GHz                      (87.34%)
+         838124745      instructions              #    0.69  insn per cycle           (86.97%)
+          54928205      branches                  #   63.382 M/sec                    (87.31%)
+          10018408      branch-misses             #   18.24% of all branches          (87.33%)
+         379561355      L1-dcache-loads           #  437.975 M/sec                    (87.30%)
+           1055969      L1-dcache-load-misses     #    0.28% of all L1-dcache hits    (87.45%)
+           9121213      LLC-loads                 #   10.525 M/sec                    (88.47%)
+            788585      LLC-load-misses           #    8.65% of all LL-cache hits     (75.18%)
+
+       0.876959662 seconds time elapsed
+
+
+
+
+result: ['866.627500', '0.988', '9', '0.010', '0', '0.000', '2326', '0.003', '1206358432', '1.392', '838124745', '0.69', '54928205', '63.382', '10018408', '18.24', '379561355', '437.975', '1055969', '0.28', '9121213', '10.525', '788585', '8.65', '0.876959662']
+
+
+10: /usr/bin/perf stat -d -- taskset -c 0 python3 algo-01/art-optimal.py
+
+stdout: Res: 84784
+
+ Performance counter stats for 'taskset -c 0 python3 algo-01/art-optimal.py':
+
+        867.944115      task-clock (msec)         #    0.989 CPUs utilized          
+                10      context-switches          #    0.012 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+              2327      page-faults               #    0.003 M/sec                  
+        1208256627      cycles                    #    1.392 GHz                      (87.36%)
+         840569507      instructions              #    0.70  insn per cycle           (85.77%)
+          55480796      branches                  #   63.922 M/sec                    (87.36%)
+          10125382      branch-misses             #   18.25% of all branches          (87.33%)
+         379962436      L1-dcache-loads           #  437.773 M/sec                    (87.36%)
+           1136727      L1-dcache-load-misses     #    0.30% of all L1-dcache hits    (88.48%)
+           9244433      LLC-loads                 #   10.651 M/sec                    (88.48%)
+            783539      LLC-load-misses           #    8.48% of all LL-cache hits     (75.21%)
+
+       0.877844300 seconds time elapsed
+
+
+
+
+result: ['867.944115', '0.989', '10', '0.012', '0', '0.000', '2327', '0.003', '1208256627', '1.392', '840569507', '0.70', '55480796', '63.922', '10125382', '18.25', '379962436', '437.773', '1136727', '0.30', '9244433', '10.651', '783539', '8.48', '0.877844300']
+
+
+1: /usr/bin/time -v taskset -c 0 python3 algo-01/art-optimal.py
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 python3 algo-01/art-optimal.py"
+	User time (seconds): 0.85
+	System time (seconds): 0.03
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.89
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 12900
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2359
+	Voluntary context switches: 2
+	Involuntary context switches: 12
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.85', '0.03', '99', '0:00.89', '0', '0', '0', '0', '12900', '0', '0', '2359', '2', '12', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+2: /usr/bin/time -v taskset -c 0 python3 algo-01/art-optimal.py
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 python3 algo-01/art-optimal.py"
+	User time (seconds): 0.84
+	System time (seconds): 0.05
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.90
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 13104
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2361
+	Voluntary context switches: 2
+	Involuntary context switches: 7
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.84', '0.05', '99', '0:00.90', '0', '0', '0', '0', '13104', '0', '0', '2361', '2', '7', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+3: /usr/bin/time -v taskset -c 0 python3 algo-01/art-optimal.py
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 python3 algo-01/art-optimal.py"
+	User time (seconds): 0.85
+	System time (seconds): 0.03
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.88
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 12944
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2362
+	Voluntary context switches: 1
+	Involuntary context switches: 5
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.85', '0.03', '99', '0:00.88', '0', '0', '0', '0', '12944', '0', '0', '2362', '1', '5', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+4: /usr/bin/time -v taskset -c 0 python3 algo-01/art-optimal.py
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 python3 algo-01/art-optimal.py"
+	User time (seconds): 0.87
+	System time (seconds): 0.03
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.91
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 12900
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2358
+	Voluntary context switches: 1
+	Involuntary context switches: 7
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.87', '0.03', '99', '0:00.91', '0', '0', '0', '0', '12900', '0', '0', '2358', '1', '7', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+5: /usr/bin/time -v taskset -c 0 python3 algo-01/art-optimal.py
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 python3 algo-01/art-optimal.py"
+	User time (seconds): 0.92
+	System time (seconds): 0.02
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.95
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 12964
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2359
+	Voluntary context switches: 1
+	Involuntary context switches: 7
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.92', '0.02', '99', '0:00.95', '0', '0', '0', '0', '12964', '0', '0', '2359', '1', '7', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+6: /usr/bin/time -v taskset -c 0 python3 algo-01/art-optimal.py
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 python3 algo-01/art-optimal.py"
+	User time (seconds): 0.82
+	System time (seconds): 0.05
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.89
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 13024
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2363
+	Voluntary context switches: 1
+	Involuntary context switches: 7
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.82', '0.05', '99', '0:00.89', '0', '0', '0', '0', '13024', '0', '0', '2363', '1', '7', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+7: /usr/bin/time -v taskset -c 0 python3 algo-01/art-optimal.py
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 python3 algo-01/art-optimal.py"
+	User time (seconds): 0.89
+	System time (seconds): 0.02
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.91
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 12896
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2359
+	Voluntary context switches: 1
+	Involuntary context switches: 9
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.89', '0.02', '99', '0:00.91', '0', '0', '0', '0', '12896', '0', '0', '2359', '1', '9', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+8: /usr/bin/time -v taskset -c 0 python3 algo-01/art-optimal.py
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 python3 algo-01/art-optimal.py"
+	User time (seconds): 0.90
+	System time (seconds): 0.01
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.91
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 12900
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2359
+	Voluntary context switches: 1
+	Involuntary context switches: 7
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.90', '0.01', '99', '0:00.91', '0', '0', '0', '0', '12900', '0', '0', '2359', '1', '7', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+9: /usr/bin/time -v taskset -c 0 python3 algo-01/art-optimal.py
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 python3 algo-01/art-optimal.py"
+	User time (seconds): 0.84
+	System time (seconds): 0.03
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.89
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 13040
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2360
+	Voluntary context switches: 1
+	Involuntary context switches: 9
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.84', '0.03', '99', '0:00.89', '0', '0', '0', '0', '13040', '0', '0', '2360', '1', '9', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+
+10: /usr/bin/time -v taskset -c 0 python3 algo-01/art-optimal.py
+
+stdout: Res: 84784
+	Command being timed: "taskset -c 0 python3 algo-01/art-optimal.py"
+	User time (seconds): 0.88
+	System time (seconds): 0.02
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.92
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 12904
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2359
+	Voluntary context switches: 2
+	Involuntary context switches: 8
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+
+
+result: ['0.88', '0.02', '99', '0:00.92', '0', '0', '0', '0', '12904', '0', '0', '2359', '2', '8', '0', '0', '2424', '0', '0', '0', '4096', '0']
+
+

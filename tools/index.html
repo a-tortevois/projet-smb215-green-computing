@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ArtOptimal solution Debugger - Draw instruction by instruction</title>
+</head>
+
+<body>
+<input type="file" onchange="loadFile(this.files[0])">
+<button onclick="reverse()">><</button>
+<button onclick="drawStart()">|></button>
+<button onclick="drawPause()">||</button>
+<button onclick="drawPrevious()"><-</button>
+<button onclick="drawNext()">-></button>
+<br/>
+<canvas id="canvas" width="1600px" height="1200px"></canvas>
+<script src="./script.js"></script>
+</body>
+</html>
